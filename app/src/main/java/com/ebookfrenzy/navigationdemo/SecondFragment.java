@@ -70,9 +70,8 @@ public class SecondFragment extends Fragment {
   }
 
   @Override
-  public void OnStart() {
+  public void onStart() {
     super.onStart();
-
     TextView argText = getView().findViewById(R.id.argText);
     SecondFragmentArgs args = SecondFragmentArgs.fromBundle(getArguments());
     String message = args.getMessage();
